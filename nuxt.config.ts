@@ -31,11 +31,4 @@ export default defineNuxtConfig({
     },
     cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
   },
-
-  // silence GH pages deployment error
-  nitro: {         
-    prerender: {             
-      failOnError:false,         
-    }     
-  }
 });
