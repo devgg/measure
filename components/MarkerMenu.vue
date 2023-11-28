@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Data2d } from "~/utils/data2d";
 import type { SelectButtonChangeEvent } from "primevue/selectbutton";
-import ContextMenu from "primevue/contextMenu";
+import ContextMenu from "primevue/contextmenu";
 
 const menu = ref<ContextMenu | null>(null);
 
