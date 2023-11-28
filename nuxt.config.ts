@@ -32,4 +32,9 @@ export default defineNuxtConfig({
     },
     cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
   },
+
+  build: {
+    // Fix for GH actions deployment error.
+    transpile: ['primevue']
+  }
 });
