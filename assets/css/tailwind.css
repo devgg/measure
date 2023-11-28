@@ -1,0 +1,57 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  --card-border: 1px solid var(--surface-border);
+  background-color: var(--surface-0);
+  --topbar-height: 58px;
+
+  --marker-color: var(--primary-color);
+  --marker-color-error: red;
+  --marker-color-selected: var(--surface-900);
+}
+
+.card {
+  background: var(--surface-card);
+  border: var(--card-border);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.p-button:focus {
+  box-shadow: none;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.error-color {
+  color: var(--marker-color-error);
+  stroke: var(--marker-color-error);
+}
+
+.primary-border {
+  border-radius: 6px;
+  border: var(--primary-color) solid;
+}
+
+.main-content-bg {
+  background: radial-gradient(var(--surface-50) 18.75%, transparent 0px) 2px 2px /
+    10px 10px var(--surface-0);
+  /*background-image: radial-gradient(var(--surface-200) 0.8px, transparent 0.8px),
+    radial-gradient(var(--surface-200) 0.8px, var(--surface-0) 0.8px);
+  background-size: 32px 32px;
+  background-position:
+    50% 50%,
+    calc(50% + 16px) calc(50% + 16px);*/
+}
