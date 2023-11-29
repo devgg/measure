@@ -17,7 +17,6 @@ function pointerDown(event: PointerEvent, index: number) {
 }
 
 function addMarker(event: MouseEvent) {
-  console.log(event);
   const containerRect = image.value!.element.getBoundingClientRect();
   measureStore.addMarker(
     event.offsetX / containerRect.width,
