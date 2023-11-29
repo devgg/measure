@@ -7,10 +7,7 @@ export default defineNuxtConfig({
     baseURL: "/measure/",
   },
 
-  css: [
-    "~/assets/css/tailwind.css",
-    "primeicons/primeicons.css",
-  ],
+  css: ["~/assets/css/tailwind.css", "primeicons/primeicons.css"],
 
   modules: [
     "nuxt-primevue",

@@ -52,9 +52,9 @@ const light = ref(true);
     </Button>
     <link
       rel="stylesheet"
-      :href="`/themes/${theme.themePrefix}-${light ? 'light' : 'dark'}-${
-        theme.themeSuffix
-      }/theme.css`"
+      :href="`/measure/themes/${theme.themePrefix}-${
+        light ? 'light' : 'dark'
+      }-${theme.themeSuffix}/theme.css`"
     />
   </div>
 </template>
