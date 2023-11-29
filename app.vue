@@ -60,7 +60,7 @@ const currentIndex = computed(() =>
 );
 
 function openGitHub() {
-  window.open("github.com", "_blank");
+  window.open("https://github.com/devgg/measure", "_blank");
 }
 </script>
 
