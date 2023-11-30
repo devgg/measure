@@ -8,7 +8,7 @@ const { marker } = defineProps<{ marker: Marker }>();
 </script>
 
 <template>
-  <div class="marker">
+  <div class="marker touch-none">
     <div class="marker-ring marker-ring-1" />
     <div class="marker-ring marker-ring-2" />
   </div>

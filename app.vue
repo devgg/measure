@@ -117,6 +117,8 @@ function openGitHub() {
   width: 100%;
   height: var(--topbar-height);
   border-bottom: var(--card-border);
+  background-color: var(--surface-0);
+  z-index: 10;
 }
 
 .buttons {

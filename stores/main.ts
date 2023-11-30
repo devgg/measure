@@ -20,10 +20,13 @@ export const useMainStore = defineStore("main", {
 
       const shouldClearStores = bitmap !== this.bitmap;
 
-      const maxSizeDenominator = 1.5;
+      const maxSizeDenominator = 1.4;
 
       const maxWidth = window.innerWidth / maxSizeDenominator;
-      const maxHeight = window.innerHeight / maxSizeDenominator;
+      const maxHeight =
+        window.innerHeight / maxSizeDenominator -
+        // Topbar height
+        50;
 
       const xDenominator = getDimensionDenominator(bitmap.width, maxWidth);
       const yDenominator = getDimensionDenominator(bitmap.height, maxHeight);

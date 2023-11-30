@@ -20,5 +20,6 @@ const toggle = (event: any) => {
   border-left: var(--card-border);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
+  overflow-y: auto;
 }
 </style>
